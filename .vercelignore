@@ -1,0 +1,9 @@
+.env*
+!.env.example
+.agents/
+.claude/
+.git/
+node_modules/
+dist/
+artifacts/
+design-qa.md

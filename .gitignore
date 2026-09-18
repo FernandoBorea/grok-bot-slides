@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.env*
+!.env.example
+.vercel/
+.agents/skills/
+.claude/skills/
+skills-lock.json
+convex/_generated/ai/ai-files.state.json
+.DS_Store
+*.log
+artifacts/
+.vercel

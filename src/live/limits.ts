@@ -1,0 +1,2 @@
+export const MAX_SESSION_PARTICIPANTS = 500;
+export const MAX_DECK_SLIDES = 100;
