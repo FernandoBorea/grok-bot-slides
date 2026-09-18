@@ -112,3 +112,14 @@ La biblioteca ahora incluye, en el orden solicitado: Grok Bot 101, Grok Bot for 
 - `npm run build`, 28 pruebas de Vitest y 4 del worker pasaron.
 - React Doctor no reportó errores. Conserva cinco advertencias de complejidad y añade cuatro de JSX parecido entre plantillas: la repetición es intencional para mantener cada slide como componente independiente y editable, según el alcance pedido. El servicio de puntuación no estuvo disponible.
 - Este cambio actualiza contenido y registro del frontend; no modifica la configuración ni las funciones de Convex.
+
+## Corrección de proyección 16:9 — 18 de septiembre de 2026
+
+Las preguntas ya no añaden altura debajo de un canvas 16:9. Toda la superficie proyectada mantiene 16:9 y, cuando hay encuesta, distribuye el componente original a la izquierda y los resultados a la derecha. El contenido conserva su propia proporción; el panel escala con el marco y respeta ambos temas. Se eliminó el ancho especial de las encuestas en pantalla completa.
+
+- Comparación en modo de presentación: slides de 101 con y sin pregunta miden 2000 × 1125, ratio 1.7777779 en ambos casos.
+- Vista previa con encuesta: 1140.12 × 641.31, ratio 1.7778 y sin scroll interno del panel.
+- Engineering, slide de revisión: cuatro opciones largas visibles en modo claro, sin recortes. Captura: `artifacts/projection-16x9-light.png`.
+- Vista móvil a 390 px: marco 352.90 × 198.50, ratio 1.77785 por redondeo subpíxel; cero desbordamiento horizontal o vertical del panel.
+- El ajuste es CSS; no cambia el envío de votos, la navegación de audiencia ni las funciones de Convex.
+- `npm run build` y `git diff --check` pasaron. React Doctor omite el análisis diferencial porque no cambiaron archivos React.
