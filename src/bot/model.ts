@@ -13,7 +13,7 @@ import {
   unionOfCirclesProfile,
 } from "./geometry";
 
-export type BotShape = "round" | "flower" | "square" | "triangle";
+export type BotShape = "round" | "flower" | "square" | "triangle" | "hexagon";
 
 function normalize(radii: number[], max = 1) {
   const peak = Math.max(...radii);
@@ -30,6 +30,7 @@ const shapes: Record<BotShape, number[]> = {
   round: new Array(PROFILE_SAMPLES).fill(1),
   square: normalize(superellipseProfile(4.2), 1.15),
   triangle: regularPolygonProfile(3, 1.12, 0.34, -90),
+  hexagon: regularPolygonProfile(6, 1.1, 0.28, -90),
   flower: normalize(unionOfCirclesProfile(flowerCircles), 1.02),
 };
 

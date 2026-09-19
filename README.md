@@ -25,8 +25,8 @@ Sin `VITE_CONVEX_URL`, aparece **«No ha sido configurado Convex»**. El modo lo
 | ----------------------------------- | --------------------------------------- | -----: |
 | Grok Bot 101                        | `grok-bot-101`                          |      3 |
 | Grok Bot for Engineering            | `grok-bot-for-engineering`              |     12 |
-| Grok Bot for Founders               | `grok-bot-for-founders`                 |      3 |
-| Grok bot for GTM     | `grok-bot-for-gtm`                      |     11 |
+| Grok Bot for Founders               | `grok-bot-for-founders`                 |     11 |
+| Grok Bot for GTM                    | `grok-bot-for-gtm`                      |     11 |
 | Grok Bot for Ops                    | `grok-bot-for-ops`                      |      3 |
 | Grok Bot for Research & Experiments | `grok-bot-for-research-and-experiments` |      3 |
 
