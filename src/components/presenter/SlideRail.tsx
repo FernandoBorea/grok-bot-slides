@@ -42,6 +42,7 @@ export function SlideRail({
                   className="slide-stage"
                   data-slide-theme={theme}
                   aria-hidden="true"
+                  inert
                 >
                   <Thumbnail />
                 </span>

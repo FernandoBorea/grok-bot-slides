@@ -1,0 +1,4 @@
+interface:
+  display_name: "Grok Slides"
+  short_description: "Crea y modifica las slides React de este repo"
+  default_prompt: "Usá $grok-slides para crear o modificar las slides de este repo respetando su estilo, audiencia y duración."

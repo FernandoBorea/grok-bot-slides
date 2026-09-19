@@ -1657,6 +1657,43 @@ code {
     transform: translateY(0);
   }
 }
+@media (min-width: 768px) {
+  .presenter-shell {
+    height: 100dvh;
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+    overflow: hidden;
+  }
+  .presenter-body {
+    min-height: 0;
+  }
+  .slides-rail {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    overflow: hidden;
+  }
+  .rail-heading,
+  .rail-footer,
+  .slide-thumbnail {
+    flex-shrink: 0;
+  }
+  .slides-rail nav {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    margin: -5px;
+    padding: 5px;
+  }
+  .presenter-main {
+    min-height: 0;
+    height: 100%;
+    margin: 0 auto;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+  }
+}
 @media (min-width: 1450px) {
   .presenter-main {
     padding: 35px 48px;

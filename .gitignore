@@ -3,7 +3,8 @@ dist/
 .env*
 !.env.example
 .vercel/
-.agents/skills/
+.agents/skills/*
+!.agents/skills/grok-slides/
 .claude/skills/
 skills-lock.json
 convex/_generated/ai/ai-files.state.json

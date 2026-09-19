@@ -11,3 +11,10 @@ Convex agent skills for common tasks can be installed by running
 `npx convex ai-files install`.
 
 <!-- convex-ai-end -->
+
+## Slides
+
+Para crear, modificar o revisar los decks de este repositorio, usá la skill
+[`grok-slides`](.agents/skills/grok-slides/SKILL.md). Incluye las convenciones de
+contenido, visuales, identidad de bots y verificación del presentador. El contexto
+de Engineering está separado de las reglas que aplican a los demás decks.
